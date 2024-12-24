@@ -1,0 +1,379 @@
+/* Start Variables */
+:root {
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+  }
+  /* End Variables */
+  /* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Work Sans", sans-serif;
+    height: 100vh;
+    background: url("../Imaged/background.jpg") fixed center / cover ;
+    padding: 50px 5%;
+  }
+  /* start profile section */
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 5% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  .animated{
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slide-in 1s ease forwards;
+    animation-delay: 1s;
+  }
+  @keyframes slide-in {
+    100% {
+      transform: translateY(0);
+    opacity: 1;
+    }
+  }
+
+  
+  .navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    border-bottom: 2px solid transparent;
+    transition: .5s;
+    color: #555260;
+  }
+  .navbar a :hover,
+  .navbar a.active  {
+    border-color: #fff;
+  }
+
+  .logo{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff;
+    color: #555260;
+  }
+  .container {
+    position: relative;
+    height: 100% ;
+    background-color: rgb(255, 255, 255 ,.5);
+    border: 2px solid rgb(255, 255, 255 ,.2);
+    border-radius: 30px; 
+    backdrop-filter: blur(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+
+  }
+  @keyframes zoom-in {
+    100%{
+      transform: scale(1);
+    }
+  }
+  .home{
+    display: flex ;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+    padding: 50px 5% 0;
+    color: #f00d0d;
+    animation-delay: 1.5s;
+  }
+  .home-detail h1 {
+    font-size: 55px;
+    line-height: 1px;
+    color: #555260;
+  }
+  .home-detail h2 {
+    font-size: 32px;
+    color: #555260;
+  }
+  .home-detail p {
+    margin: 10px 0 20px ;
+    color: #555260;
+  }
+  .home-detail .download-social {
+    display: flex;
+    align-items: center;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px  #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+  }
+  .btn:hover{
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+  }
+  .home-detail .social-icons {
+    margin-left: 20px;
+  }
+  .home-detail .social-icons a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 8px;
+    transition: .5s;
+
+  }
+  .home-detail .social-icons a:hover{
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+  }
+  .home-img .img-box{
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #fff;
+    overflow: hidden;
+  }
+  .home-img .img-box img {
+    position: absolute;
+    top: 10px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  /* end profile section */
+  /* Start myskills section  */
+  .myskills{
+    position: relative;
+    height: 700px ;
+    background-color: rgb(255, 255, 255 ,.5);
+    border: 2px solid rgb(255, 255, 255 ,.2);
+    border-radius: 30px; 
+    backdrop-filter: blur(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+  }
+  @keyframes zoom-in {
+    100%{
+      transform: scale(1);
+    }
+  }
+  .myskill-content h1 {
+    text-align: center;
+    padding: 10px;
+    color: #555260;
+
+  }
+  .myskill-content h2 {
+    padding: 20px;
+    color: #555260;
+  }
+  .myskill-content .box {
+    margin-left: 20px;
+  }
+  .myskill-content .box a {
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid #0b0a0a;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 170px;
+    height: 170px;
+    font-size: 70px;
+    color: #3b83a8;
+    right: 50px;
+    margin: 0 15px;
+    text-align: center;
+    justify-content: center;
+    transition: .5s;
+    box-shadow: 0 0 3px #122834;
+
+  }
+  .myskill-content .box a p {
+    font-size: 30px;
+    color: #122834;
+  }
+  .myskill-content .box a:hover{
+    background: #1a222e;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+  }
+  /* end my skills section */
+  /* start projects section  */
+  .project {
+    position: relative;
+    height: 900px ;
+    background-color: rgb(255, 255, 255 ,.5);
+    border: 2px solid rgb(255, 255, 255 ,.2);
+    border-radius: 30px; 
+    backdrop-filter: blur(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+  }
+  @keyframes zoom-in {
+    100%{
+      transform: scale(1);
+    }
+  }
+  .project h1{
+    font-size: 40px;
+   text-align: center;
+   color: #555260;
+  }
+  .project h2,h3,p {
+    padding: 10px;
+    color: #555260;
+  }
+  .project p{
+    width: 700px;
+    height: 100px;
+  }
+  .project-box{
+    margin: auto;
+    border-radius: 20px;
+    height: 400px;
+    width: 900px;
+    border: 2px solid black;
+  }
+  .project-box video {
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    margin: auto;
+    border-radius: 30px;
+    height: 400px;
+    width: 900px;
+    align-items: center;
+    object-fit: cover;
+  }
+  .buttun {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .pro-btn {
+    padding: 10px 30px;
+    background: #394568;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px  #fff;
+   
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+  }
+  .pro-btn:hover{
+    background: transparent;
+    box-shadow: none;
+    color: #333;
+  }
+  .pro-btn2 {
+    padding: 10px 30px;
+    background: #f0f2f5;
+    border: 2px solid #fff;
+    color: #333;
+    border-radius: 40px;
+    box-shadow: 0 0 10px  #fff;
+   
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+  }
+  .pro-btn2:hover{
+    background: #2f3358;
+    box-shadow: none;
+    color: #fff;
+  }
+  /* end projects section */
+  /* start contact section */
+  .contact {
+    position: flex;
+    height: 700px ;
+    background-color: rgb(255, 255, 255 ,.5);
+    border: 2px solid rgb(255, 255, 255 ,.2);
+    border-radius: 30px; 
+    backdrop-filter: blur(30px);
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+ 
+  }
+  @keyframes zoom-in {
+    100%{
+      transform: scale(1);
+    }
+  }
+  .contact h1 {
+    text-align: center;
+    padding: 10px;
+    color: #555260;
+
+  }
+  .contact-content {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    height: 500px;
+    margin-left: 50px;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .contact-content input {
+    height: 50px;
+    width: 450px;
+    padding: 10px;
+    border-radius: 10px;
+
+  }
+  .contact-content .input1{
+    display: flex;
+    text-align: center;
+    height: 200px;
+  }
+  .send-but {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+  }
+  .send{
+    height: 30px;
+    width: 150px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #2c4755;
+    border: 2px solid #2c4755;
+    box-shadow: 0 3px #2c4755;
+    transition: .5s;
+  }
+  .send:hover {
+    color: #333;
+    background-color:#fff ;
+  }
+  /* end contact section */
+  
